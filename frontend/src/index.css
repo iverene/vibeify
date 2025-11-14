@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=VT323&display=swap');
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
+@import "tailwindcss";
+
+@theme {
+  --color-lightWhite: #FCFCFC;
+  --color-deepBlack: #1E1E1E;
+  --color-brightBlue: #397EFF;
+  --color-neonGreen: #76D905;
+  --color-neonYellow: #E4FB89;
+
+  --font-heading: "Instrument Serif", serif;
+  --font-body: "Inter", sans-serif;
+  --font-pixel: "VT323", monospace;
+}
+
+@layer base {
+  body {
+    @apply m-0 p-0 text-deepBlack font-body font-medium;
+  }
+}
+
+@layer components {
+  .bg-gradient-lg {
+    @apply bg-[linear-gradient(to_bottom,theme(colors.brightBlue)_0%,theme(colors.brightBlue)_1%,theme(colors.lightWhite)_30%)];
+  }
+
+  .bg-gradient-sm {
+    @apply fixed bottom-0 left-0 w-full h-12 z-50
+    bg-[linear-gradient(to_top,theme(colors.brightBlue)_0%,theme(colors.brightBlue)_1%,theme(colors.lightWhite)_100%)];
+  }
+}
