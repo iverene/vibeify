@@ -34,8 +34,12 @@
     display: none;
   }
 
-  .about {
+  p {
     @apply text-center text-sm/7;
+  }
+
+  .icons {
+    @apply text-2xl text-brightBlue/80 hover:text-brightBlue hover:scale-105 duration-200 transition-all;
   }
 
 
