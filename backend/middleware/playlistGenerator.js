@@ -8,7 +8,7 @@ async function generatePlaylist(userInput) {
 
     "${userInput}"
 
-    Interpret the meaning, vibe, mood, feeling, theme, or context behind the input—no matter what language it is written in.
+    Interpret the meaning, vibe, mood, feeling, theme, or context behind the input—no matter what language it is written in. You should understand Filipino language and slangs.
 
     Return the playlist strictly in this JSON format:
 
@@ -16,6 +16,7 @@ async function generatePlaylist(userInput) {
     "playlistName": "string",
     "songs": [
         {
+        "id": "int",
         "title": "string",
         "artist": "string"
         }
@@ -25,20 +26,21 @@ async function generatePlaylist(userInput) {
     Guidelines:
     - Generate at least 10 songs.
     - All songs must match the mood or vibe of the user's input.
-    - The playlist name must be creative and unique.
+    - Songs can be in any language.
+    - The playlist name must be creative, trendy, and unique.
     - Do NOT include numbers, extra text, or explanations outside the JSON.
     - Do NOT include symbols such as ** or any markdown formatting.
     - The result must be valid JSON only.
     `
 
     const response = await axios.post('https://openrouter.ai/api/v1/chat/completions',
-        {model: "",
+        {model: "openai/gpt-oss-20b:free",
             messages: [{role: "user", content: prompt}],
             temperature: 0.3
         },
         {  
             headers: {
-                Authorization: 'Bearer ${key}',
+                Authorization: `Bearer ${key}`,
                 "HTTP-Referer": "http://localhost:5173",
                 "X-Title": "Vibeify"
             }

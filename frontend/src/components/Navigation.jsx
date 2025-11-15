@@ -10,7 +10,7 @@ function Navigation() {
     };
 
     const isActive = (path) => {
-        return location.pathname === path ? 'font-semibold bg-linear-to-b from-neonGreen to-lightWhite rounded-full p-2 border' : 'text-deepBlack';
+        return location.pathname === path ? 'bg-linear-to-b from-neonGreen to-lightWhite rounded-full p-2 border' : 'text-deepBlack';
     };
 
   return (

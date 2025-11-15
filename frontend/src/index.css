@@ -7,7 +7,7 @@
   --color-deepBlack: #1E1E1E;
   --color-brightBlue: #397EFF;
   --color-neonGreen: #76D905;
-  --color-neonYellow: #E4FB89;
+  --color-neonPink: #ED8EC1;
 
   --font-heading: "Instrument Serif", serif;
   --font-body: "Inter", sans-serif;
@@ -29,4 +29,10 @@
     @apply fixed bottom-0 left-0 w-full h-12 z-50
     bg-[linear-gradient(to_top,theme(colors.brightBlue)_0%,theme(colors.brightBlue)_1%,theme(colors.lightWhite)_100%)];
   }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+
 }
