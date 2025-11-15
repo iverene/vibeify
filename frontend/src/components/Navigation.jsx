@@ -14,7 +14,7 @@ function Navigation() {
     };
 
   return (
-    <nav className='flex items-center justify-end p-2 sticky top-0'>
+    <nav className='flex items-center justify-end px-2 pt-2 sticky top-0'>
         <div>
                 <ul className="hidden lg:flex py-4 px-20 gap-25 text-lg">
                     <li>

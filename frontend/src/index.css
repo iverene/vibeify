@@ -34,5 +34,9 @@
     display: none;
   }
 
+  .about {
+    @apply text-center text-sm/7;
+  }
+
 
 }
