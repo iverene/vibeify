@@ -11,6 +11,8 @@ function Home() {
   const [userInput, setUserInput] = useState("")
   const [result, setResult] = useState(null)
 
+  const BASE_URL = "https://vibeify-backend.vercel.app";
+
   const handlePlaylistGenerate = async () => {
     if  (!userInput) {
       return alert("Please enter something ...")
