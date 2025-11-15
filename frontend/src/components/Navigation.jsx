@@ -14,9 +14,9 @@ function Navigation() {
     };
 
   return (
-    <nav className='flex items-center justify-end px-2 pt-2 sticky top-0'>
+    <nav className='flex items-center justify-end lg:justify-end md:justify-center px-2 pt-2 sticky top-0'>
         <div>
-                <ul className="hidden lg:flex py-4 px-20 gap-25 text-lg">
+                <ul className="hidden md:flex lg:flex py-4 px-20 gap-25 text-lg">
                     <li>
                         <Link 
                             to="/" 
@@ -48,8 +48,8 @@ function Navigation() {
                 <i className={`fa-solid ${isMenuOpen ? 'fa-xmark' : 'fa-bars'} text-2xl`}></i>
             </div>
 
-            <div className={`absolute top-full left-0 w-full md:hidden transition-all duration-300 ease-in-out ${
-                isMenuOpen ? 'opacity-100 visible shadow-lg' : 'opacity-0 invisible'
+            <div className={`bg-brightBlue shadow-lg absolute top-full left-0 w-full md:hidden transition-all duration-300 ease-in-out ${
+                isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`}>
                 <ul className="flex flex-col items-center py-4 space-y-4 text-lg">
                     <li>
