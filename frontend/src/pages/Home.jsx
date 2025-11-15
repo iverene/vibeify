@@ -3,7 +3,8 @@ import Footer from "../components/Footer";
 import Logo from "../components/Logo";
 import axios from "axios";
 import React, {useState} from 'react';
-import * as htmlToImage from "html-to-image";
+import sendIcon from '../assets/send.png'; 
+
 
 
 
@@ -51,7 +52,7 @@ function Home() {
                     className="text-sm w-full border rounded-lg py-2 px-4"/>
 
                   <button type="submit" onClick={handlePlaylistGenerate} >
-                    <img src="src/assets/send.png" alt="Send Button" className="w-12 h-auto cursor-pointer" />
+                    <img src={sendIcon} alt="Send Button" className="w-12 h-auto cursor-pointer" />
                   </button>
                 </article>
             </section>
