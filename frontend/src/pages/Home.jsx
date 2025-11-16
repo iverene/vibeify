@@ -22,7 +22,7 @@ function Home() {
     setResult(null)
 
     try {
-        const res = await axios.post("http://localhost:5000/api/user/playlist", {userInput})
+        const res = await axios.post(`${BASE_URL}/api/user/playlist`, {userInput})
         setResult(res.data)
         setUserInput("");
     } catch (error) {
