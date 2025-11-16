@@ -46,7 +46,7 @@ function Home() {
             <section className="flex flex-col items-center space-y-6 lg:space-y-10">
                 <article className="flex flex-row space-x-2">
                   <p className="w-8 h-8 border rounded-full p-1 bg-linear-to-t from-neonGreen to-lightWhite"></p>
-                  <p className="text-sm italic border rounded-full px-4 py-1 bg-linear-to-t from-neonGreen to-lightWhite">What playlist theme are we going for?</p>
+                  <p className="text-sm text-left italic border rounded-full px-4 py-1 bg-linear-to-t from-neonGreen to-lightWhite">What playlist theme are we going for?</p>
                 </article>
                 <article className="flex space-x-2">
                   
